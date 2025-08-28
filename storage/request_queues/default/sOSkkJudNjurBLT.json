@@ -1,0 +1,9 @@
+{
+	"id": "sOSkkJudNjurBLT",
+	"json": "{\"id\":\"sOSkkJudNjurBLT\",\"url\":\"https://www.instagram.com/cristiano/\",\"loadedUrl\":\"https://www.instagram.com/cristiano/\",\"uniqueKey\":\"https://www.instagram.com/cristiano\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"username\":\"cristiano\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2025-08-28T09:49:18.270Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.instagram.com/cristiano",
+	"url": "https://www.instagram.com/cristiano/"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "instagram-profile-scraper",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "apify": "^3.4.4",
+    "crawlee": "^3.14.1",
+    "playwright": "^1.55.0"
+  }
+}

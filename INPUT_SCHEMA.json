@@ -1,0 +1,27 @@
+{
+  "title": "Instagram Profile Scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "usernames": {
+      "title": "Instagram Usernames",
+      "type": "array",
+      "description": "One or more Instagram usernames to scrape (without @).",
+      "editor": "stringList",
+      "prefill": [
+        "cristiano",
+        "natgeo"
+      ]
+    },
+    "maxPosts": {
+      "title": "Max Posts",
+      "type": "integer",
+      "description": "Maximum number of recent posts to extract per profile.",
+      "default": 5,
+      "minimum": 1
+    }
+  },
+  "required": [
+    "usernames"
+  ]
+}

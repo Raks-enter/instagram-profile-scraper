@@ -1,0 +1,9 @@
+{
+	"id": "qATses3Mk7WasKs",
+	"json": "{\"id\":\"qATses3Mk7WasKs\",\"url\":\"https://www.instagram.com/natgeo/\",\"loadedUrl\":\"https://www.instagram.com/natgeo/\",\"uniqueKey\":\"https://www.instagram.com/natgeo\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"username\":\"natgeo\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2025-08-28T09:49:19.391Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.instagram.com/natgeo",
+	"url": "https://www.instagram.com/natgeo/"
+}

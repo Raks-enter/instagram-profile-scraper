@@ -1,0 +1,90 @@
+{
+  "name": "instagram-profile-scraper",
+  "title": "Instagram Profile Scraper",
+  "description": "Scrape Instagram profiles by adding one or more usernames. Extracts number of followers & follows, profile URL, bio, posts, likes, counts, related profiles, captions, and highlight reels.",
+  "version": "0.0.1",
+  "categories": [
+    "Instagram",
+    "Scraping",
+    "Social Media"
+  ],
+  "tags": [
+    "instagram",
+    "profile",
+    "followers",
+    "posts",
+    "scraper"
+  ],
+  "input": "./INPUT_SCHEMA.json",
+  "output": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "title": "Username"
+        },
+        "profileUrl": {
+          "type": "string",
+          "title": "Profile URL"
+        },
+        "followersCount": {
+          "type": "integer",
+          "title": "Followers Count"
+        },
+        "followsCount": {
+          "type": "integer",
+          "title": "Follows Count"
+        },
+        "bio": {
+          "type": "string",
+          "title": "Bio"
+        },
+        "posts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "postUrl": {
+                "type": "string",
+                "title": "Post URL"
+              },
+              "caption": {
+                "type": "string",
+                "title": "Caption"
+              },
+              "likesCount": {
+                "type": "integer",
+                "title": "Likes Count"
+              },
+              "commentsCount": {
+                "type": "integer",
+                "title": "Comments Count"
+              }
+            }
+          }
+        },
+        "relatedProfiles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Related Profiles"
+        },
+        "highlightReel": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Highlight Reel"
+        }
+      },
+      "required": [
+        "username",
+        "profileUrl",
+        "followersCount",
+        "followsCount"
+      ]
+    }
+  }
+}

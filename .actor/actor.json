@@ -1,0 +1,13 @@
+{
+  "actorSpecification": 1,
+  "name": "instagram-profile-scraper",
+  "title": "Instagram Profile Scraper",
+  "version": "0.0",
+  "buildTag": "latest",
+  "storages": {
+    "dataset": "./dataset",
+    "keyValueStores": [
+      "./key_value_store"
+    ]
+  }
+}
