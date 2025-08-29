@@ -1,10 +1,9 @@
-# Use Apify's Playwright image with Chrome preinstalled
 FROM apify/actor-node-playwright-chrome:20
 
-# Copy everything to the image
+# Copy everything into the container
 COPY . ./
 
-# Install only production dependencies
+# Install dependencies
 RUN npm install --omit=dev
 
 # Start the actor

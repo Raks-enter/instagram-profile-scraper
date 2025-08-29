@@ -1,0 +1,52 @@
+{
+  "title": "Instagram Profile Scraper Output",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "username": {
+      "title": "Username",
+      "type": "string"
+    },
+    "profileUrl": {
+      "title": "Profile URL",
+      "type": "string",
+      "format": "uri"
+    },
+    "followersCount": {
+      "title": "Followers Count",
+      "type": "integer"
+    },
+    "followsCount": {
+      "title": "Follows Count",
+      "type": "integer"
+    },
+    "bio": {
+      "title": "Bio",
+      "type": "string"
+    },
+    "posts": {
+      "title": "Posts",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "postUrl": { "title": "Post URL", "type": "string", "format": "uri" },
+          "caption": { "title": "Caption", "type": "string" },
+          "likesCount": { "title": "Likes", "type": "integer" },
+          "commentsCount": { "title": "Comments", "type": "integer" }
+        }
+      }
+    },
+    "relatedProfiles": {
+      "title": "Related Profiles",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "highlightReel": {
+      "title": "Highlight Reel",
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["username", "profileUrl"]
+}
