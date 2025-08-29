@@ -3,5 +3,6 @@
   "name": "instagram-profile-scraper",
   "title": "Instagram Profile Scraper",
   "version": "0.0",
-  "buildTag": "latest"
+  "buildTag": "latest",
+  "dockerfile": "./Dockerfile"
 }
