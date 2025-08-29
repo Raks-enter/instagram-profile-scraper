@@ -4,5 +4,40 @@
   "title": "Instagram Profile Scraper",
   "version": "0.0",
   "buildTag": "latest",
-  "dockerfile": "./Dockerfile"
+  "dockerfile": "./Dockerfile",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "fields": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "username": { "type": "string" },
+          "profileUrl": { "type": "string", "format": "uri" },
+          "followersCount": { "type": "integer" },
+          "followsCount": { "type": "integer" },
+          "bio": { "type": "string" }
+        },
+        "required": ["username", "profileUrl"]
+      },
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": ["username", "profileUrl", "followersCount", "followsCount", "bio"]
+          },
+          "display": {
+            "component": "table",
+            "properties": {
+              "username": { "label": "Username", "format": "text" },
+              "profileUrl": { "label": "Profile", "format": "link" },
+              "followersCount": { "label": "Followers", "format": "number" },
+              "followsCount": { "label": "Following", "format": "number" },
+              "bio": { "label": "Bio", "format": "text" }
+            }
+          }
+        }
+      }
+    }
+  }
 }
